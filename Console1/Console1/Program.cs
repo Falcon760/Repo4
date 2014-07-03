@@ -25,16 +25,21 @@ namespace Console1
     class Program
     {
         static void Main(string[] args)
-      
         {
-           int abc = 500;
-           int xyz = 200;
+            
+           // int abc = 500;
+           // int xyz = 200;
+
+           Console.WriteLine("Enter first number: ");
+           int abc = int.Parse(Console.ReadLine());
+           Console.WriteLine("Enter second number: ");
+           int xyz = int.Parse(Console.ReadLine());
 
             // int.Parse(Console.ReadLine());
            Maththing math = new Maththing();
            var Blah = math.Compare(abc, xyz);
         
-            Console.WriteLine(Blah);
+            Console.WriteLine("The smallest is: " + Blah);
             Console.ReadLine();
 
         }
